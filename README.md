@@ -11,7 +11,7 @@ conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=
 
 pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1.0/index.html
 
-pip install tqdm opencv-python scipy tensorboardXabulate easydict ftfy regex
+pip install tqdm opencv-python scipy tensorboardX tabulate easydict ftfy regex
 ```
 
 
