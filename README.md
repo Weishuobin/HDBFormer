@@ -60,11 +60,11 @@ You can change the `local_config' files and checkpoint path in the script to cho
 
 If you want to eval NYUDepthv2 dataset
 ```
-python eval.py --configlocal_configs.NYUDepthv2.HDBFormer >  --continue_fpath <The location of the weight file>
+python eval.py --config local_configs.NYUDepthv2.HDBFormer --continue_fpath <The location of the weight file>
 ```
 If you want to eval SUNRGBD dataset
 ```
-python eval.py --configlocal_configs.SUNRGBD.HDBFormer >  --continue_fpath <The location of the weight file>
+python eval.py --config local_configs.SUNRGBD.HDBFormer --continue_fpath <The location of the weight file>
 ```
 
 
