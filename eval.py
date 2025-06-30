@@ -14,7 +14,7 @@ import torch.distributed as dist
 import torch.backends.cudnn as cudnn
 from torch.nn.parallel import DistributedDataParallel
 from utils.dataloader.dataloader import get_train_loader,get_val_loader
-from models.total_modual_new3 import EncoderDecoder as segmodel
+from models.HDBFormer import EncoderDecoder as segmodel
 from utils.dataloader.RGBXDataset import RGBXDataset
 from utils.init_func import init_weight, group_weight
 from utils.lr_policy import WarmUpPolyLR
@@ -139,7 +139,7 @@ if __name__ == '__main__':
                 device = torch.device('cuda')
                 # metric=evaluate(model, val_loader,config, device, engine)
                 # print('acc, macc, f1, mf1, ious, miou',acc, macc, f1, mf1, ious, miou)
-                # metric = evaluate_msf(model, val_loader,config, device,[0.5,0.75,1.0,1.25,1.5],True,engine, save_dir=r"C:\Users\Shuobin Wei\Desktop\消融对比图\cmx")
+                # metric = evaluate_msf(model, val_loader,config, device,[0.5,0.75,1.0,1.25,1.5],True,engine, save_dir = None)
                 metric = evaluate_msf(model, val_loader,config, device,[0.5,0.75,1.0,1.25,1.5],True,engine)
                 ious, miou = metric.compute_iou()
                 acc, macc = metric.compute_pixel_acc()
