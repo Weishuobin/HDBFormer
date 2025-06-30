@@ -34,7 +34,7 @@ Compred to the original datasets, we map the depth (.npy) to .png via 'plt.imsav
 
  NYUDepth or SUNRGBD trained HDBFormer can be downloaded at:
 
-| HDBFormer| [GoogleDrive] | [OneDrive] | [BaiduNetdisk | 
+| HDBFormer| [GoogleDrive] | [OneDrive] | [BaiduNetdisk] | 
 |:---: |:---:|:---:|:---:|
 
 
