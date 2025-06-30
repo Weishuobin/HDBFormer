@@ -9,7 +9,7 @@ conda activate HDBFormer
 # CUDA 11.8
 conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 
-pip install mmcv==2.1.0 -f https://download.openmmLab.com/mmcv/dist/cu118/torch2.1/index.htn
+pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1.0/index.html
 
 pip install tqdm opencv-python scipy tensorboardXabulate easydict ftfy regex
 ```
