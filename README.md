@@ -42,6 +42,7 @@ Compred to the original datasets, we map the depth (.npy) to .png via 'plt.imsav
 **2. Train.**
 
 You can change the `local_config' files in the script to choose the model for training. 
+
 If you want to train NYUDepthv2 dataset
 ```
 python train.py --config local_configs.NYUDepthv2.HDBFormer 
@@ -56,6 +57,7 @@ After training, the checkpoints will be saved in the path `checkpoints/XXX', whe
 **3. Eval.**
 
 You can change the `local_config' files and checkpoint path in the script to choose the model for testing. 
+
 If you want to eval NYUDepthv2 dataset
 ```
 python eval.py --configlocal_configs.NYUDepthv2.HDBFormer >  --continue_fpath <The location of the weight file>
