@@ -21,12 +21,11 @@ pip install tqdm opencv-python scipy tensorboardX tabulate easydict ftfy regex
 
 - **Datasets:** 
 
-By default, you can put datasets into the folder 'datasets' or use 'ln -s path_to_data datasets'.
+Create a folder named datasets in the root directory of the project for storing the two indoor RGB-D semantic segmentation datasets, NYUDepthv2 and SUNRGBD. The datasets should be handled in a way that strictly follows the standard process of the DFormer project, for details, please refer to the section on dataset preparation in the project documentation. Links to the relevant datasets are provided below:
 
 | Datasets | [GoogleDrive](https://drive.google.com/drive/folders/1RIa9t7Wi4krq0YcgjR3EWBxWWJedrYUl?usp=sharing) | [OneDrive](https://mailnankaieducn-my.sharepoint.com/:f:/g/personal/bowenyin_mail_nankai_edu_cn/EqActCWQb_pJoHpxvPh4xRgBMApqGAvUjid-XK3wcl08Ug?e=VcIVob) | [BaiduNetdisk](https://pan.baidu.com/s/1-CEL88wM5DYOFHOVjzRRhA?pwd=ij7q) | 
 |:---: |:---:|:---:|:---:|
 
-Compred to the original datasets, we map the depth (.npy) to .png via 'plt.imsave(save_path, np.load(depth), cmap='Greys_r')', reorganize the file path to a clear format, and add the split files (.txt).
 
 
 
@@ -34,8 +33,7 @@ Compred to the original datasets, we map the depth (.npy) to .png via 'plt.imsav
 
  NYUDepth or SUNRGBD trained HDBFormer can be downloaded at:
 
-| HDBFormer| [GoogleDrive] | [OneDrive] | [BaiduNetdisk] | 
-|:---: |:---:|:---:|:---:|
+Coming soon
 
 
 
@@ -45,11 +43,11 @@ You can change the `local_config' files in the script to choose the model for tr
 
 If you want to train NYUDepthv2 dataset
 ```
-python train.py --config local_configs.NYUDepthv2.HDBFormer 
+python train.py --config local_configs.NYUDepthv2.HDBFormer --gpus 1
 ```
 If you want to train SUNRGBD dataset
 ```
-python train.py --config local_configs.SUNRGBD.HDBFormer 
+python train.py --config local_configs.SUNRGBD.HDBFormer --gpus 1
 ```
 After training, the checkpoints will be saved in the path `checkpoints/XXX', where the XXX is depends on the training config.
 
