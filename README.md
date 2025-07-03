@@ -26,7 +26,7 @@ pip install "numpy<2" --upgrade
 
 - **Datasets:** 
 
-Create a folder named datasets in the root directory of the project for storing the two indoor RGB-D semantic segmentation datasets, NYUDepthv2 and SUNRGBD. The datasets should be handled in a way that strictly follows the standard process of the DFormer project, for details, please refer to the section on dataset preparation in the project documentation. Links to the relevant datasets are provided below:
+Create a folder named datasets in the root directory of the project for storing the two indoor RGB-D semantic segmentation datasets, NYUDepthv2 and SUNRGBD. The datasets should be handled in a way that strictly follows the standard process of the [DFormer](https://github.com/VCIP-RGBD/DFormer) project, for details, please refer to the section on dataset preparation in the project documentation. Links to the relevant datasets are provided below:
 
 | Datasets | [GoogleDrive](https://drive.google.com/drive/folders/1RIa9t7Wi4krq0YcgjR3EWBxWWJedrYUl?usp=sharing) | [OneDrive](https://mailnankaieducn-my.sharepoint.com/:f:/g/personal/bowenyin_mail_nankai_edu_cn/EqActCWQb_pJoHpxvPh4xRgBMApqGAvUjid-XK3wcl08Ug?e=VcIVob) | [BaiduNetdisk](https://pan.baidu.com/s/1-CEL88wM5DYOFHOVjzRRhA?pwd=ij7q) | 
 |:---: |:---:|:---:|:---:|
