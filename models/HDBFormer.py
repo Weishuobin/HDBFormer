@@ -9,7 +9,6 @@ from .MIIM import feature_fusion_block
 class LDFormer(nn.Module):
     def __init__(self, channels=[3, 64, 128, 256, 512, 1024]):
         super(LDFormer, self).__init__()
-        # 动态创建多个阶段
         self.stages = nn.ModuleList([
             self._make_stage(channels[i], channels[i + 1]) for i in range(len(channels) - 1)
         ])
