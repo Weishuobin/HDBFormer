@@ -39,7 +39,8 @@ Create a folder named datasets in the root directory of the project for storing 
  NYUDepthv2 or SUNRGBD trained HDBFormer can be downloaded at:
 
 | HDBFormer| [GoogleDrive](https://drive.google.com/drive/folders/1ds3OILB7-WDe7JwSpuX1OJA6_QqOoJNe?usp=drive_link)| 
-|:---:|
+
+|:---: |
 
 
 
