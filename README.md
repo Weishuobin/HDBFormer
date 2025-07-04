@@ -1,4 +1,7 @@
-## 1. 🚀 Get Start
+# HDBFormer: Efficient RGB-D Semantic Segmentation With a Heterogeneous Dual-Branch Framework
+🚀 Welcome to the official code repository for [HDBFormer: Efficient RGB-D Semantic Segmentation With a Heterogeneous Dual-Branch Framework](https://arxiv.org/abs/2504.13579). We're excited to share our work with you!
+
+🚀 Our work has been accepted by **IEEE Signal Processing Letters 2024**!
 
 **0. Install**
 
