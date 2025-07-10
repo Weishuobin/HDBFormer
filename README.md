@@ -65,11 +65,11 @@ You can change the `local_config' files and checkpoint path in the script to cho
 
 If you want to eval NYUDepthv2 dataset
 ```
-python eval.py --config local_configs.NYUDepthv2.HDBFormer --continue_fpath checkpoints/NYUDepthv2_bestmiou
+python eval.py --config local_configs.NYUDepthv2.HDBFormer --gpus 1 --continue_fpath checkpoints/NYUDepthv2_bestmiou
 ```
 If you want to eval SUNRGBD dataset
 ```
-python eval.py --config local_configs.SUNRGBD.HDBFormer --continue_fpath checkpoints/SUNRGBD_bestmiou
+python eval.py --config local_configs.SUNRGBD.HDBFormer --gpus 1 --continue_fpath checkpoints/SUNRGBD_bestmiou
 ```
 
 >  If you have any questions or suggestions about our work, feel free to contact me via e-mail (weishuobin@gmail.com) or raise an issue. 
